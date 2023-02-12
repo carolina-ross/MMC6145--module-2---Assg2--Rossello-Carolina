@@ -6,8 +6,8 @@ import { useTimer } from "./util/customHooks";
 
 export default function App() {
   const [showModal, setShowModal] = useState(false);
-  const [bestTime, setBestTime] = useState(null);
-  const [previousTime, setPreviousTime] = useState(null);
+  const [bestTime, setBestTime] = useState();
+  const [previousTime, setPreviousTime] = useState();
 
   const {
     time,
