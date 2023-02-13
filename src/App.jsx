@@ -26,7 +26,6 @@ export default function App() {
   ];
 
     const handleGameStart = () => {
-    timerReset();
     timerStart();
   };
 
@@ -34,6 +33,7 @@ export default function App() {
     timerStop();
     // set the previous time to the current time
     setPreviousTime(time);
+    timerReset();
 
     // check if the current time is less than the best time
     // and update the best time if necessary
